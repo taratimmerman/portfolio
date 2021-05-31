@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders porject start hype', () => {
+test('renders tara timmerman', () => {
   render(<App />);
-  const hypeElement = screen.getByText(/Let's do this/i);
-  expect(hypeElement).toBeInTheDocument();
+  const nameElement = screen.getByText(/tara timmerman/i);
+  expect(nameElement).toBeInTheDocument();
 });
