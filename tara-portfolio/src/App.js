@@ -1,11 +1,13 @@
 import './App.css';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
 import styled from 'styled-components';
+
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
 
           </Route>
         </Switch>
+
+        <Footer />
 
       </AppContainer>
 
