@@ -29,16 +29,17 @@ export default Navbar
 
 // STYLED COMPONENTS BELOW:
 
-const NavContainer = styled.div`
-    height: 45px;
+const NavContainer = styled.nav`
+    height: 55px;
     background-color: #fcfcfc;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #eaeaea;
-    margin-top: 0;
-    position: fixed;
-    z-index: 99999;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    width: 100%;
 
     @media screen and (max-width: 768px) {
         transition: 0.8s all ease;
@@ -49,7 +50,7 @@ const NavContainer = styled.div`
 const NavOption = styled.div`
     color: #5e5e5e;
     margin: 75px;
-    font-size: .75rem;
+    font-size: .80rem;
     cursor: pointer;
 
     &.active {
@@ -69,11 +70,15 @@ const NavOption = styled.div`
 const NavLogo = styled.div`
     color: #404040;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
     text-decoration: none;
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.5rem;
+    }
 `;
 
 export const MobileIcon = styled.div`
@@ -84,8 +89,8 @@ export const MobileIcon = styled.div`
         position: absolute;
         top: 0;
         right: 0;
-        transform: translate(-175%, 35%);
-        font-size: 1.5rem;
+        transform: translate(-175%, 65%);
+        font-size: 1.3rem;
         cursor: pointer;
         color: #5e5e5e;
     }
