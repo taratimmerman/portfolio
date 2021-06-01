@@ -17,7 +17,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             </SidebarWrapper>
         </SidebarContainer>
     )
-}
+};
 
 export default Sidebar
 
@@ -40,7 +40,7 @@ const SidebarContainer = styled.aside`
 
 const CloseIcon = styled(FaTimes)`
     color: #5e5e5e;
-`
+`;
 
 const Icon = styled.div`
     position: absolute;
@@ -50,11 +50,11 @@ const Icon = styled.div`
     font-size: 2rem;
     cursor: pointer;
     outline: none;
-`
+`;
 
 export const SidebarWrapper = styled.div`
     color: #f8f8f8;
-`
+`;
 
 export const SidebarMenu = styled.ul`
     display: grid;
@@ -65,7 +65,7 @@ export const SidebarMenu = styled.ul`
     @media screen and (max-width: 480px) {
         grid-template-rows: repeat(6, 60px);
     }
-`
+`;
 
 export const SidebarLink = styled(LinkRouter)`
     display: flex;
@@ -83,4 +83,4 @@ export const SidebarLink = styled(LinkRouter)`
         transition: all 0.2s ease-in-out;
         color: black;
     }
-`
+`;
