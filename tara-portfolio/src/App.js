@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import About from './components/About';
 import {
   BrowserRouter as Router,
   Switch,
@@ -8,18 +9,17 @@ import {
 } from "react-router-dom";
 import styled from 'styled-components';
 
-
 function App() {
   return (
     <Router>
 
-      <AppContainer>
+      <>
 
         <Navbar />
 
         <Switch>
           <Route path="/about">
-
+            <About />
           </Route>
           
           <Route path="/">
@@ -29,17 +29,10 @@ function App() {
 
         <Footer />
 
-      </AppContainer>
+      </>
 
     </Router>
   );
 }
 
 export default App;
-
-// STYLED COMPONENTS BELOW:
-
-const AppContainer = styled.div`
-  background-color: #f8f8f8;
-  height: 100vh;
-`;

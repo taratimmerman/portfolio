@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FaBars } from 'react-icons/fa';
+import {
+    Link
+} from "react-router-dom";
 
 const Navbar = ({ toggle }) => {
     return (
@@ -9,17 +12,23 @@ const Navbar = ({ toggle }) => {
                 <FaBars />
             </MobileIcon>
 
-            <NavOption>
-                Work
-            </NavOption>
+            <Link to="/" style={LinkStyle}>
+                <NavOption>
+                    Work
+                </NavOption>
+            </Link>
+            
+            <Link to="/" style={LogoStyle}>
+                <NavLogo>
+                    tara timmerman
+                </NavLogo>
+            </Link>
 
-            <NavLogo>
-                tara timmerman
-            </NavLogo>
-
-            <NavOption>
-                About
-            </NavOption>
+            <Link to="/about" style={LinkStyle}>
+                <NavOption>
+                    About
+                </NavOption>
+            </Link>
 
         </NavContainer>
     )
@@ -47,19 +56,26 @@ const NavContainer = styled.nav`
     }
 `;
 
+const LinkStyle = {
+    color: '#5e5e5e',
+    margin: '60px',
+    fontsize: '.80rem',
+    textDecoration: 'none'
+};
+
+const LogoStyle = {
+    textDecoration: 'none'
+};
+
 const NavOption = styled.div`
-    color: #5e5e5e;
-    margin: 75px;
-    font-size: .80rem;
-    cursor: pointer;
 
     &.active {
-        color: #404040;
+        color: black;
     }
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        color: #404040;
+        color: black;
     }
 
     @media screen and (max-width: 768px) {
@@ -69,10 +85,8 @@ const NavOption = styled.div`
 
 const NavLogo = styled.div`
     color: #404040;
-    cursor: pointer;
     font-size: 1.8rem;
     font-weight: bold;
-    text-decoration: none;
     display: flex;
     align-items: center;
 

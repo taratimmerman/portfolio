@@ -42,6 +42,6 @@ const StyledLink = styled.a`
 `;
 
 const Copyright = styled.span`
-    margin: 4rem 0 0 0;
+    margin: 4rem 2rem 0;
     font-size: .85rem;
 `;
