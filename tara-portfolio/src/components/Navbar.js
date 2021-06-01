@@ -12,7 +12,7 @@ const Navbar = ({ toggle }) => {
                 <FaBars />
             </MobileIcon>
 
-            <Link to="/" style={LinkStyle}>
+            <Link to="/work" style={LinkStyle}>
                 <NavOption>
                     Work
                 </NavOption>
