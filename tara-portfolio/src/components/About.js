@@ -46,7 +46,6 @@ const AboutContainer = styled.section`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: #404040;
     margin: 3rem 0 5rem 0;
 `;
 
@@ -86,7 +85,7 @@ const SocialsWrapper = styled.div`
 
 const SocialsLink = styled.a`
     text-decoration: none;
-    color: #404040;;
+    color: #404040;
     font-size: 1.5rem;
     padding: 10px;
 

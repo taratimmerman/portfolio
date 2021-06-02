@@ -8,7 +8,6 @@ import {
 const Work = () => {
     return (
         <WorkContainer>
-            <StyledH3>Work</StyledH3>
             <ProjectsWrapper>
                 <Link to="/family-promise">
                     <ProjectCard>
@@ -32,10 +31,6 @@ const WorkContainer = styled.section`
     flex-direction: column;
     color: #404040;
     margin: 3rem 0 5rem 0;
-`;
-
-const StyledH3 = styled.h3`
-    margin: 0 0 5rem 0;
 `;
 
 const ProjectsWrapper = styled.div`
