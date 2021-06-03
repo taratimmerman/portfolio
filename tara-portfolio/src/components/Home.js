@@ -31,14 +31,20 @@ const Greeting = styled.h1`
     font-size: 3.5rem;
     line-height: 1.55em;
     color: #404040;
+    max-width: 80vw;
+    text-align: center;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 825px) {
         font-size: 2.5rem;
         transition: 0.5s ease;
     }
 
     @media screen and (max-width: 500px) {
         font-size: 2rem;
+        transition: 0.5s ease;
+    }
+    @media screen and (max-width: 400px) {
+        font-size: 1.5rem;
         transition: 0.5s ease;
     }
 `;

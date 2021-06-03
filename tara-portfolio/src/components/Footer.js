@@ -26,6 +26,7 @@ const FooterContainer = styled.footer`
 
 const StyledH1 = styled.h1`
     margin: 1rem 0;
+    text-align: center;
 `;
 
 const StyledH3 = styled.h3`
