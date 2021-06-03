@@ -65,6 +65,6 @@ const WorkWrapper = styled.div`
 `;
 
 const StyledH3 = styled.h3`
-    margin: 5rem 0;
+    margin: 3rem 0;
     color: #404040;
 `;

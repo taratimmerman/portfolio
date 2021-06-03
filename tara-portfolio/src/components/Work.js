@@ -12,7 +12,9 @@ const Work = () => {
                 <Link to="/family-promise">
                     <ProjectCard>
                         <FPImage alt="Family Promise Service Tracker"></FPImage>
-                        <StyledH2>Family Promise Service Tracker</StyledH2>
+                        <Overlay>
+                            <StyledH3>Family Promise Service Tracker</StyledH3>
+                        </Overlay>
                     </ProjectCard>
                 </Link>
             </ProjectsWrapper>
@@ -30,7 +32,7 @@ const WorkContainer = styled.section`
     justify-content: center;
     flex-direction: column;
     color: #404040;
-    margin: 3rem 0 5rem 0;
+    margin: 1rem 0 5rem 0;
 `;
 
 const ProjectsWrapper = styled.div`
@@ -43,31 +45,48 @@ const ProjectsWrapper = styled.div`
 `;
 
 const ProjectCard = styled.div`
-    max-width: 700px;
-    margin: auto; 
     position: relative;
     display:flex;
     align-items: center;
     justify-content: center;
 `;
 
-const StyledH2 = styled.h2`
+const Overlay = styled.h2`
     opacity: 0;
     position: absolute;
-    font-size: 2.5rem;
+    background-color: #4285F4;
+    width: 700px;
+    height: 700px;
     transition: 0.5s ease;
-    color: #404040;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        opacity: 0.8;
+        }
 
     @media screen and (max-width: 768px) {
-        opacity: 1;
-        font-size: 2rem;
+        width: 500px;
+        height: 500px;
         transition: 0.5s ease;
     }
 
     @media screen and (max-width: 500px) {
-        opacity: 1;
-        font-size: 1.3rem;
+        width: 300px;
+        height: 300px;
         transition: 0.5s ease;
+    }
+`;
+
+const StyledH3 = styled.h3`
+    color: #404040;
+    text-align: center;
+    font-size: 3rem;
+
+    @media screen and (max-width: 768px) {
+        transition: 0.5s ease;
+        font-size: 2rem;
     }
 `;
 
@@ -80,23 +99,13 @@ const FPImage = styled.div`
     height: 700px;
     transition: 0.5s ease;
 
-    &:hover {
-        opacity: 0.3;
-        transition: 0.5s ease-out;
-        ${StyledH2} {
-            opacity: 1;
-            }
-        }
-
     @media screen and (max-width: 768px) {
-        opacity: 0.3;
         width: 500px;
         height: 500px;
         transition: 0.5s ease;
     }
 
     @media screen and (max-width: 500px) {
-        opacity: 0.3;
         width: 300px;
         height: 300px;
         transition: 0.5s ease;
