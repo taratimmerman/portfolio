@@ -71,11 +71,11 @@ const StyledP = styled.p`
 `;
 
 const StyledLink = styled.a`
-    text-decoration: none;
+    text-decoration: underline;
     color: black;
 
     &:hover {
-        text-decoration: underline;
+        text-decoration: none;
         }
 `;
 
