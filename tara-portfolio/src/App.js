@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import About from './components/About';
 import Work from './components/Work';
 import Home from './components/Home';
+import FamilyPromise from './components/FamilyPromise';
 import {
   BrowserRouter as Router,
   Switch,
@@ -38,6 +39,10 @@ function App() {
               <StyledH3>Work</StyledH3>
               <Work />
             </WorkWrapper>
+          </Route>
+
+          <Route path="/family-promise">
+            <FamilyPromise />
           </Route>
 
           <Route path="/">
