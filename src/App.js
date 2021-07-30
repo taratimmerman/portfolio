@@ -7,6 +7,7 @@ import About from './components/About';
 import Work from './components/Work';
 import Home from './components/Home';
 import FamilyPromise from './components/FamilyPromise';
+import TicketPunch from './components/TicketPunch';
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,19 +16,19 @@ import {
 import styled from 'styled-components';
 
 function App() {
-  const [ isOpen, setIsOpen ] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
-      setIsOpen(!isOpen)
-  }
+    setIsOpen(!isOpen);
+  };
 
   return (
     <Router>
 
       <>
 
-      <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} />
+        <Sidebar isOpen={isOpen} toggle={toggle} />
+        <Navbar toggle={toggle} />
 
         <Switch>
           <Route path="/about">
@@ -39,6 +40,10 @@ function App() {
               <StyledH3>Work</StyledH3>
               <Work />
             </WorkWrapper>
+          </Route>
+
+          <Route path="/ticket-punch">
+            <TicketPunch />
           </Route>
 
           <Route path="/family-promise">
