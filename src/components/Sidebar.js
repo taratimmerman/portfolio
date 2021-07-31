@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import {FaTimes} from 'react-icons/fa';
 import {Link as LinkRouter} from 'react-router-dom';
@@ -16,10 +17,15 @@ const Sidebar = ({ isOpen, toggle }) => {
                 </SidebarMenu>
             </SidebarWrapper>
         </SidebarContainer>
-    )
+    );
 };
 
-export default Sidebar
+export default Sidebar;
+
+Sidebar.propTypes = {
+    isOpen: PropTypes.any,
+    toggle: PropTypes.any
+};
 
 // STYLED COMPONENTS BELOW:
 
