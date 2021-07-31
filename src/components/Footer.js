@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components';
 
 const Footer = () => {
@@ -8,10 +8,10 @@ const Footer = () => {
             <StyledH3>Download my <StyledLink href="https://resume.creddle.io/resume/8jy1or5ub4n" target="_blank">resume</StyledLink>.</StyledH3>
             <Copyright>© 2021 Tara Timmerman</Copyright>
         </FooterContainer>
-    )
-}
+    );
+};
 
-export default Footer
+export default Footer;
 
 // STYLED COMPONENTS BELOW:
 

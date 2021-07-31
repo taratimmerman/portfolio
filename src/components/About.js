@@ -12,9 +12,9 @@ const About = () => {
             <AboutImage alt="Tara Timmerman"></AboutImage>
 
             <AboutText>
-                <StyledH4>Hi! Nice to meet you, I'm Tara.</StyledH4>
-                <StyledP>I recently graduated from <StyledLink href="https://lambdaschool.com/hire-from-lambda" target="_blank">Lambda School</StyledLink> in Full Stack Web Development and enjoy creating inclusive, user-friendly and efficient web applications. Check out some of what I've been up to lately <StyledLink href="https://dev.to/taratimmerman" target="_blank">here</StyledLink>, <StyledLink href="https://github.com/taratimmerman/amazon-clone-frontend" target="_blank">here</StyledLink> and <StyledLink href="https://github.com/taratimmerman/amazon-clone-backend" target="_blank">there</StyledLink>.</StyledP>
-                <StyledP>I thrive in a collaborative environment and appreciate building excellent relationships between people and teams—my Lambda apprenticeship team met, bonded and developed a robust app in just four weeks—and I'm actively searching for the next talented team to join.</StyledP>
+                <StyledH4>Hi! Nice to meet you, I&apos;m Tara.</StyledH4>
+                <StyledP>I recently graduated from <StyledLink href="https://lambdaschool.com/hire-from-lambda" target="_blank">Lambda School</StyledLink> in Full Stack Web Development and enjoy creating inclusive, user-friendly and efficient web applications. Check out some of what I&apos;ve been up to lately <StyledLink href="https://dev.to/taratimmerman" target="_blank">here</StyledLink>, <StyledLink href="https://github.com/taratimmerman/amazon-clone-frontend" target="_blank">here</StyledLink> and <StyledLink href="https://github.com/taratimmerman/amazon-clone-backend" target="_blank">there</StyledLink>.</StyledP>
+                <StyledP>I thrive in a collaborative environment and appreciate building excellent relationships between people and teams—my Lambda apprenticeship team met, bonded and developed a robust app in just four weeks—and I&apos;m actively searching for the next talented team to join.</StyledP>
                 <StyledP>Before Lambda School, I worked at HCA Healthcare, where I was a prominent part of our community impact—like being directly responsible for increasing blood drive donations by over 10% in 2019—and later moved into technical support.</StyledP>
                 <StyledP>When I am not programming, I can be found longboarding and spending time with my wife and pups in <StyledLink href="https://en.wikipedia.org/wiki/Silicon_Slopes" target="_blank">Silicon Slopes</StyledLink>⛰️.</StyledP>
             </AboutText>
@@ -25,10 +25,10 @@ const About = () => {
             </SocialsWrapper>
 
         </AboutContainer>
-    )
-}
+    );
+};
 
-export default About
+export default About;
 
 // STYLED COMPONENTS BELOW:
 

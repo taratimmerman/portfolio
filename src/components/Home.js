@@ -6,16 +6,16 @@ const Home = () => {
     return (
         <>
         <GreetingWrapper>
-            <Greeting>Hi, I’m Tara.</Greeting>
-            <Greeting>I’m a recent Web Development grad</Greeting>
+            <Greeting>Hi, I&apos;m Tara.</Greeting>
+            <Greeting>I&apos;m a recent Web Development grad</Greeting>
             <Greeting>from <StyledLink href="https://lambdaschool.com/hire-from-lambda" target="_blank">Lambda School</StyledLink>.</Greeting>
         </GreetingWrapper>
         <Work />
         </>
-    )
+    );
 };
 
-export default Home
+export default Home;
 
 // STYLED COMPONENTS BELOW:
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { FaBars } from 'react-icons/fa';
 import {
@@ -31,10 +32,14 @@ const Navbar = ({ toggle }) => {
             </Link>
 
         </NavContainer>
-    )
-}
+    );
+};
 
-export default Navbar
+export default Navbar;
+
+Navbar.propTypes = {
+    toggle: PropTypes.any 
+};
 
 // STYLED COMPONENTS BELOW:
 

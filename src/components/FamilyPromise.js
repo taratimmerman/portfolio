@@ -42,10 +42,10 @@ const FamilyPromise = () => {
                 <StyledP>I am thrilled about where this app will go. The stakeholder’s main vision is to have a full-screen, interactive map for a Family Promise employee or volunteer to monitor and evaluate their service analytics. My team spent considerable time laying the foundations and designing future possible implementations for the next step in metrics. For example, plotting the locations of services on a map is a crucial first step in this direction. And ideally, dragging the map around would generate new analyses based on the area being viewed, and allow users to view the services behind those metrics.</StyledP>
             </FPText>
         </FPContainer>
-    )
-}
+    );
+};
 
-export default FamilyPromise
+export default FamilyPromise;
 
 // STYLED COMPONENTS BELOW:
 
