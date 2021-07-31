@@ -37,6 +37,10 @@ export const ProjectWrapper = styled.div`
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
+
+        :nth-child(even){
+            flex-direction: row-reverse;
+        }
     }
 
     :not(:first-child) {
@@ -159,7 +163,13 @@ export const ProjectVisual = styled.div`
     border-radius: 10px 10px 0 0;
 
     @media (min-width: 768px) {
-        border-radius: 0 15px 15px 0;
+        &.ticket-punch{
+            border-radius: 0 15px 15px 0;
+        }
+        
+        &.family-promise{
+            border-radius: 15px 0 0 15px;
+        }
     }
 
     &.ticket-punch{
