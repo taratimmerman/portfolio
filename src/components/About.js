@@ -9,6 +9,7 @@ import {
     PageTitle,
     PageTitleBorder
 } from '../styles/pageStyles';
+import Credentials from './Credentials';
 
 const About = () => {
 
@@ -35,6 +36,8 @@ const About = () => {
                 <SocialsLink href="https://www.linkedin.com/in/tara-timmerman/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></SocialsLink>
                 <SocialsLink href="https://github.com/taratimmerman" target="_blank" rel="noopener noreferrer"><FaGithub /></SocialsLink>
             </SocialsWrapper>
+
+            <Credentials />
 
         </PageSection>
     );
@@ -85,6 +88,7 @@ const StyledLink = styled.a`
 
 const SocialsWrapper = styled.div`
     max-width: 100px;
+    margin-bottom: 3rem;
 `;
 
 const SocialsLink = styled.a`

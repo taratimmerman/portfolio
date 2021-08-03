@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 import Mask from '../assets/hero-white-mask.png';
 import { PageSection } from '../styles/pageStyles';
+import Credentials from './Credentials';
 import Skills from './Skills';
 import Work from './Work';
 
@@ -25,6 +26,7 @@ const Home = () => {
                 <HeroMask src={Mask} />
             </GreetingBackground>
             <Skills />
+            <Credentials />
             <Work />
         </PageSection>
     );

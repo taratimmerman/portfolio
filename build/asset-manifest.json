@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.bf7ffd77.chunk.css",
-    "main.js": "/portfolio/static/js/main.9c0e4fcb.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.9c0e4fcb.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.174aa5cd.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.174aa5cd.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.3d660857.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.3d660857.js.map",
     "static/js/2.dc745732.chunk.js": "/portfolio/static/js/2.dc745732.chunk.js",
@@ -18,6 +18,7 @@
     "static/media/fp-plug.65984992.gif": "/portfolio/static/media/fp-plug.65984992.gif",
     "static/media/fp-walkthrough.0fc78086.gif": "/portfolio/static/media/fp-walkthrough.0fc78086.gif",
     "static/media/hero-white-mask.9b34dd2e.png": "/portfolio/static/media/hero-white-mask.9b34dd2e.png",
+    "static/media/lambda-badge-full-stack-web.cd767bf5.png": "/portfolio/static/media/lambda-badge-full-stack-web.cd767bf5.png",
     "static/media/tara.10f707fd.png": "/portfolio/static/media/tara.10f707fd.png",
     "static/media/tp-tickets-mobile.aeab3b95.png": "/portfolio/static/media/tp-tickets-mobile.aeab3b95.png"
   },
@@ -25,6 +26,6 @@
     "static/js/runtime-main.3d660857.js",
     "static/js/2.dc745732.chunk.js",
     "static/css/main.bf7ffd77.chunk.css",
-    "static/js/main.9c0e4fcb.chunk.js"
+    "static/js/main.174aa5cd.chunk.js"
   ]
 }
