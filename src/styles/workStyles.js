@@ -1,14 +1,12 @@
-import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
-export const WorkSection = styled.section`
-    font-weight: 400;
-    line-height: 1.5;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+export const WorkTitle = styled.h2`
+    color: #404040;
+    font-size: 	2.75rem;
+    line-height: 1.06;
+    letter-spacing: 1.88px;
+    margin: 3rem 0 5rem 0;
 `;
 
 export const WorkContainer = styled.div`
@@ -19,7 +17,7 @@ export const WorkContainer = styled.div`
     width: 100%;
     max-width: 940px;
     padding: 0 15px 0 15px;
-    margin: 0 15px 0 15px;
+    margin: 1rem 0 3rem 0;
 `;
 
 // Wraps description and image divs
@@ -44,14 +42,14 @@ export const ProjectWrapper = styled.div`
     }
 
     :not(:first-child) {
-        margin-top: 40px;
+        margin-top: 90px;
 
         @media (min-width: 992px) {
-            margin-top: 80px;
+            margin-top: 130px;
         }
 
         @media (min-width: 768px) {
-            margin-top: 60px;
+            margin-top: 120px;
             border-radius: 15px;
         }
     }
@@ -186,6 +184,7 @@ export const ProjectImage = styled.img`
     vertical-align: middle;
     border-style: none;
     padding: 36px;
+    transform: scale(1.5);
 
     @media (min-width: 992px) {
         max-height: 475px;

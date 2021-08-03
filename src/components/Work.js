@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
+
+import FamilyPromise from '../assets/fp-login.png';
+import TicketPunch from '../assets/tp-tickets-mobile.png';
 import {
-    WorkSection,
+    PageSection,
+    PageTitle,
+    PageTitleBorder
+} from '../styles/pageStyles';
+import {
     WorkContainer,
     ProjectWrapper,
     ProjectDetails,
@@ -11,13 +18,22 @@ import {
     ProjectButton,
     ProjectVisual,
     ProjectImage
-} from '../styles/work.styles';
-import TicketPunch from '../assets/tp-tickets-mobile.png';
-import FamilyPromise from '../assets/fp-login.png';
+} from '../styles/workStyles';
 
 const Work = () => {
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+    });
+
     return (
-        <WorkSection>
+        <PageSection>
+
+            <PageTitle>
+                My Latest Work
+            </PageTitle>
+            <PageTitleBorder />
+
             <WorkContainer>
 
                 <ProjectWrapper>
@@ -26,13 +42,13 @@ const Work = () => {
                             <ProjectTitle>Ticket Punch</ProjectTitle>
                             <ProjectRole>Full Stack Developer</ProjectRole>
                             <ProjectButtonWrapper>
-                                <ProjectButton to='/ticket-punch' className="ticket-punch">View Project</ProjectButton>
+                                <ProjectButton to='/portfolio/ticket-punch' className="ticket-punch">View Project</ProjectButton>
                             </ProjectButtonWrapper>
                         </ProjectText>
                     </ProjectDetails>
 
                     <ProjectVisual className="ticket-punch">
-                        <ProjectImage src={TicketPunch}/>
+                        <ProjectImage src={TicketPunch} />
                     </ProjectVisual>
                 </ProjectWrapper>
 
@@ -42,18 +58,18 @@ const Work = () => {
                             <ProjectTitle>Family Promise Service Tracker</ProjectTitle>
                             <ProjectRole>Backend Developer</ProjectRole>
                             <ProjectButtonWrapper>
-                                <ProjectButton to='/family-promise' className="family-promise">View Project</ProjectButton>
+                                <ProjectButton to='/portfolio/family-promise' className="family-promise">View Project</ProjectButton>
                             </ProjectButtonWrapper>
                         </ProjectText>
                     </ProjectDetails>
 
                     <ProjectVisual className="family-promise">
-                        <ProjectImage src={FamilyPromise}/>
+                        <ProjectImage src={FamilyPromise} />
                     </ProjectVisual>
                 </ProjectWrapper>
 
             </WorkContainer>
-        </WorkSection>
+        </PageSection>
     );
 };
 

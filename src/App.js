@@ -1,19 +1,20 @@
 import { React, useState } from 'react';
+
 import './App.css';
-import Sidebar from './components/Sidebar';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import About from './components/About';
-import Work from './components/Work';
-import Home from './components/Home';
-import FamilyPromise from './components/FamilyPromise';
-import TicketPunch from './components/TicketPunch';
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
-import styled from 'styled-components';
+
+import About from './components/About';
+import FamilyPromise from './components/FamilyPromise';
+import Footer from './components/Footer';
+import Home from './components/Home';
+import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
+import TicketPunch from './components/TicketPunch';
+import Work from './components/Work';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,26 +32,23 @@ function App() {
         <Navbar toggle={toggle} />
 
         <Switch>
-          <Route path="/about">
+          <Route path="/portfolio/about">
             <About />
           </Route>
 
-          <Route path="/work">
-            <WorkWrapper>
-              <StyledH3>Work</StyledH3>
+          <Route path="/portfolio/work">
               <Work />
-            </WorkWrapper>
           </Route>
 
-          <Route path="/ticket-punch">
+          <Route path="/portfolio/ticket-punch">
             <TicketPunch />
           </Route>
 
-          <Route path="/family-promise">
+          <Route path="/portfolio/family-promise">
             <FamilyPromise />
           </Route>
 
-          <Route path="/">
+          <Route path="/portfolio">
             <Home />
           </Route>
         </Switch>
@@ -64,17 +62,3 @@ function App() {
 }
 
 export default App;
-
-// STYLED COMPONENTS BELOW:
-
-const WorkWrapper = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-`;
-
-const StyledH3 = styled.h3`
-    margin: 3rem 0;
-    color: #404040;
-`;

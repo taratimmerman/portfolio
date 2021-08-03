@@ -1,5 +1,7 @@
 import React, { useLayoutEffect } from 'react';
+
 import styled from 'styled-components';
+
 import HeroPic from '../assets/fp-hero.png';
 import Plug from '../assets/fp-plug.gif';
 import Walkthrough from '../assets/fp-walkthrough.gif';
@@ -8,7 +10,7 @@ const FamilyPromise = () => {
 
     useLayoutEffect(() => {
         window.scrollTo(0, 0);
-      });
+    });
 
     return (
         <FPContainer>

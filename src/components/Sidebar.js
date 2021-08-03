@@ -1,8 +1,9 @@
 import React from 'react';
+
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import {FaTimes} from 'react-icons/fa';
 import {Link as LinkRouter} from 'react-router-dom';
+import styled from 'styled-components';
 
 const Sidebar = ({ isOpen, toggle }) => {
     return (
@@ -12,8 +13,8 @@ const Sidebar = ({ isOpen, toggle }) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to='/work' onClick={toggle}>Work</SidebarLink>
-                    <SidebarLink to='/about' onClick={toggle}>About</SidebarLink>
+                    <SidebarLink to='/portfolio/work' onClick={toggle}>Work</SidebarLink>
+                    <SidebarLink to='/portfolio/about' onClick={toggle}>About</SidebarLink>
                 </SidebarMenu>
             </SidebarWrapper>
         </SidebarContainer>
@@ -23,8 +24,8 @@ const Sidebar = ({ isOpen, toggle }) => {
 export default Sidebar;
 
 Sidebar.propTypes = {
-    isOpen: PropTypes.any,
-    toggle: PropTypes.any
+    isOpen: PropTypes.bool,
+    toggle: PropTypes.func
 };
 
 // STYLED COMPONENTS BELOW:

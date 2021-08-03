@@ -1,10 +1,9 @@
 import React from 'react';
+
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 import { FaBars } from 'react-icons/fa';
-import {
-    Link
-} from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import styled from 'styled-components';
 
 const Navbar = ({ toggle }) => {
     return (
@@ -13,23 +12,23 @@ const Navbar = ({ toggle }) => {
                 <FaBars />
             </MobileIcon>
 
-            <Link to="/work" style={LinkStyle}>
+            <StyledNavLink to="/portfolio/work">
                 <NavOption>
                     Work
                 </NavOption>
-            </Link>
+            </StyledNavLink>
             
-            <Link to="/" style={LogoStyle}>
+            <StyledNavLink to="/portfolio">
                 <NavLogo>
-                    tara timmerman
+                    Tara Timmerman
                 </NavLogo>
-            </Link>
+            </StyledNavLink>
 
-            <Link to="/about" style={LinkStyle}>
+            <StyledNavLink to="/portfolio/about">
                 <NavOption>
                     About
                 </NavOption>
-            </Link>
+            </StyledNavLink>
 
         </NavContainer>
     );
@@ -38,7 +37,7 @@ const Navbar = ({ toggle }) => {
 export default Navbar;
 
 Navbar.propTypes = {
-    toggle: PropTypes.any 
+    toggle: PropTypes.func 
 };
 
 // STYLED COMPONENTS BELOW:
@@ -61,22 +60,18 @@ const NavContainer = styled.nav`
     }
 `;
 
-const LinkStyle = {
-    color: '#5e5e5e',
-    margin: '60px',
-    fontsize: '.80rem',
-    textDecoration: 'none'
-};
-
-const LogoStyle = {
-    textDecoration: 'none'
-};
-
-const NavOption = styled.div`
+const StyledNavLink = styled(NavLink)`
+    color: #5e5e5e;
+    margin: 32px;
+    text-decoration: none;
 
     &.active {
         color: black;
     }
+`;
+
+const NavOption = styled.h3`
+    font-size: 1.125rem;
 
     &:hover {
         transition: all 0.2s ease-in-out;
@@ -88,16 +83,17 @@ const NavOption = styled.div`
     }
 `;
 
-const NavLogo = styled.div`
+const NavLogo = styled.h1`
     color: #404040;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
     display: flex;
     align-items: center;
+    text-decoration: none;
 
     @media screen and (max-width: 768px) {
         font-size: 1.3rem;
-        width: 150px;
+        width: 160px;
     }
 `;
 
