@@ -53,10 +53,10 @@ const GreetingWrapper = styled.section`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 3rem 0 3rem 0;
+    margin: 3rem 0 1rem 0;
 
     @media screen and (max-width: 500px) {
-        margin: 2rem 0 2rem 0;
+        margin: 2rem 0 1rem 0;
     }
 `;
 

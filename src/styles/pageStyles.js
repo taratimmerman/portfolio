@@ -13,18 +13,22 @@ export const PageSection = styled.section`
 
 export const PageTitle = styled.h2`
     color: #404040;
-    font-size: 	2.75rem;
+    font-size: 	2rem;
     line-height: 1.06;
     letter-spacing: 1.88px;
-    margin: 3rem 0 0.5rem 0;
+    margin: 2rem 0 0.5rem 0;
 
-    @media (max-width: 768px) {
-        font-size: 2rem;
+    @media (min-width: 768px) {
+        font-size: 2.75rem;
     }
 `;
 
 export const PageTitleBorder = styled.div`
-    border: solid 1px #ef4b6c;
+    border-bottom: solid 2px #ef4b6c;
     width: 50px;
-    margin: 0 0 5rem 0;
+    margin-bottom: 1rem;
+
+    @media (min-width: 768px) {
+        margin-bottom: 3rem;
+    }
 `;

@@ -52,6 +52,7 @@ const AboutImage = styled.div`
     height: 18rem;
     border-radius: 50%;
     border: 5px solid #fcfcfc;
+    margin-top: 1rem;
 `;
 
 const AboutText = styled.div`

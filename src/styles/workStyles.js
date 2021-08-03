@@ -17,7 +17,11 @@ export const WorkContainer = styled.div`
     width: 100%;
     max-width: 940px;
     padding: 0 15px 0 15px;
-    margin: 1rem 0 3rem 0;
+    margin: 2rem 0 3rem 0;
+
+    @media (min-width: 768px) {
+        margin-top: 3rem;
+    }
 `;
 
 // Wraps description and image divs

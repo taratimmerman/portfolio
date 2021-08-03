@@ -23,12 +23,12 @@ export default Footer;
 
 const FooterMask = styled.img`
     width: 100%;
-    z-index: 0;
+    z-index: -99;
     transform: translateY(-3px);
 `;
 
 const FooterBackground = styled.div`
-    z-index: 0;
+    z-index: -99;
     bottom: 0;
     width: 100%;
     height: 100%;

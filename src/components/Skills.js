@@ -154,11 +154,12 @@ const Skill = styled.div`
     align-items: center;
     justify-content: center;
     font-size: 66px;
-    margin: 2rem;
     transition: scale .3s ease,transform .3s;
+    margin: 1rem;
 
     @media (min-width: 768px) {
         font-size: 77px;
+        margin: 2rem;
     }
 
     :hover {
